@@ -15,6 +15,7 @@ import CheckUpList from "../components/CheckUpList";
 import Last25CheckUps from "../components/Last25CheckUps";
 import DiagnosticCenter from "../components/DiagnosticCenter";
 import Dashboard from "../components/Dashboard";
+
 const AppRoutes = () => (
   <div className="flex h-screen w-full">
     <div className="flex-grow shadow-2xl rounded-3xl relative z-10 mt-3 mx-2 mb-2 overflow-hidden">
@@ -52,6 +53,7 @@ const AppRoutes = () => (
             path="checkup/diagnostic-center"
             element={<DiagnosticCenter />}
           />
+          <Route path="/medicinesale" element={<MedicineSale />} />
         </Routes>
       </div>
     </div>
